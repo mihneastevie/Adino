@@ -15,6 +15,8 @@ import com.example.michael.adino.R;
 import com.example.michael.adino.Search.SearchActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+//import com.example.michael.adino.Profile.ProfileActivity;
+
 /**
  * Created by michael on 18/10/2017.
  */

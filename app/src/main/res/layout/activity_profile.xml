@@ -7,17 +7,17 @@
     android:layout_height="match_parent">
 
 
-<include layout="@layout/layout_viewpager"/>
+    <include layout="@layout/layout_viewpager"/>
 
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-    <include layout="@layout/layout_profile"/>
+        <include layout="@layout/layout_profile"/>
 
-    <include layout="@layout/layout_bottom_navigation_view"/>
+        <include layout="@layout/layout_bottom_navigation_view"/>
 
-</RelativeLayout>
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

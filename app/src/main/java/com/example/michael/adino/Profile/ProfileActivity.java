@@ -33,7 +33,7 @@ public class ProfileActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acitvity_profile);
+        setContentView(R.layout.activity_profile);
         Log.d(TAG, "onCreate: started");
         mContext = ProfileActivity.this;
         setupBottomNavigationView();
@@ -52,7 +52,7 @@ public class ProfileActivity extends AppCompatActivity{
         profilePhoto = (ImageView) findViewById(R.id.profile_photo);
     }
 
-   private void setupToolbar(){
+    private void setupToolbar(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.profileToolBar);
         setSupportActionBar(toolbar);
 
@@ -80,7 +80,6 @@ public class ProfileActivity extends AppCompatActivity{
     }
 
 }
-
 
 
 

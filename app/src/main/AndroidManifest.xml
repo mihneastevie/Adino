@@ -26,7 +26,8 @@
         </activity>
         <activity android:name=".Profile.ProfileActivity">
         </activity>
-        <activity android:name=".Profile.AccountSettingsActivity"/>
+        <activity android:name=".Profile.AccountSettingsActivity">
+        </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

@@ -1,184 +1,184 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-   <ScrollView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@color/white"
-           android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
 
-           <de.hdodenhof.circleimageview.CircleImageView
-               android:layout_width="120dp"
-               android:layout_height="120dp"
-               android:id="@+id/profile_photo"
-               android:layout_marginTop="20dp"
-               app:civ_border_color="@color/black"
-               app:civ_border_width="2dp"
-               android:layout_centerHorizontal="true" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_photo"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Change Photo"
-               android:id="@+id/changeProfilePhoto"
-               android:layout_below="@id/profile_photo"
-               android:layout_centerHorizontal="true"
-               android:textColor="@color/colorPrimary"
-               android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:id="@+id/changeProfilePhoto"
+                android:layout_below="@id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
 
-           <!-- Display name -->
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:layout_below="@id/changeProfilePhoto"
-               android:layout_marginTop="80dp"
-               android:background="@drawable/grey_border_bottom"
-               android:id="@+id/rellayout1">
-
-
-               <ImageView
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/ic_username"
-                   android:layout_centerVertical="true"/>
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/username"
-                   android:layout_centerVertical="true"
-                   android:layout_marginStart="40dp"
-                   android:background="@null"
-                   android:inputType="textNoSuggestions"
-                   android:hint="Display Name"/>
-           </RelativeLayout>
-
-           <!-- Display location -->
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:layout_below="@id/rellayout1"
-               android:background="@drawable/grey_border_bottom"
-               android:id="@+id/rellayout2"
-               android:layout_marginTop="15dp">
+            <!-- Display name -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/changeProfilePhoto"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/rellayout1">
 
 
-               <ImageView
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/ic_location"
-                   android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_username"
+                    android:layout_centerVertical="true"/>
 
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/location"
-                   android:layout_centerVertical="true"
-                   android:layout_marginStart="40dp"
-                   android:background="@null"
-                   android:inputType="textNoSuggestions"
-                   android:hint="Display Location"/>
-           </RelativeLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Display Name"/>
+            </RelativeLayout>
 
-
-           <!-- Display profile description -->
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:layout_below="@id/rellayout2"
-               android:background="@drawable/grey_border_bottom"
-               android:id="@+id/rellayout3"
-               android:layout_marginTop="15dp">
-
-
-               <ImageView
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/ic_descriptionic"
-                   android:layout_centerVertical="true"/>
-
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/description"
-                   android:layout_centerVertical="true"
-                   android:layout_marginStart="40dp"
-                   android:background="@null"
-                   android:inputType="textNoSuggestions"
-                   android:hint="Display Description"/>
-           </RelativeLayout>
-
-           <TextView
-               android:id="@+id/private_information"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_below="@id/rellayout3"
-               android:layout_centerHorizontal="true"
-               android:layout_marginTop="50dp"
-               android:background="@drawable/grey_border_bottom"
-               android:text="Private Information"
-               android:textColor="@color/black"
-               android:textSize="25sp" />
-
-           <!-- Display user email -->
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:layout_below="@id/private_information"
-               android:background="@drawable/grey_border_bottom"
-               android:id="@+id/rellayout4"
-               android:layout_marginTop="15dp">
+            <!-- Display location -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rellayout1"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/rellayout2"
+                android:layout_marginTop="15dp">
 
 
-               <ImageView
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/ic_email"
-                   android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_location"
+                    android:layout_centerVertical="true"/>
 
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/email"
-                   android:layout_centerVertical="true"
-                   android:layout_marginStart="40dp"
-                   android:background="@null"
-                   android:inputType="textNoSuggestions"
-                   android:hint="Display Email"/>
-           </RelativeLayout>
-
-           <!-- Display user phone# -->
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:layout_below="@id/rellayout4"
-               android:background="@drawable/grey_border_bottom"
-               android:id="@+id/rellayout5"
-               android:layout_marginTop="15dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Display Location"/>
+            </RelativeLayout>
 
 
-               <ImageView
-                   android:layout_width="35dp"
-                   android:layout_height="35dp"
-                   android:src="@drawable/ic_phone"
-                   android:layout_centerVertical="true"/>
+            <!-- Display profile description -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rellayout2"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/rellayout3"
+                android:layout_marginTop="15dp">
 
-               <EditText
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:id="@+id/phoneNumber"
-                   android:layout_centerVertical="true"
-                   android:layout_marginStart="40dp"
-                   android:background="@null"
-                   android:inputType="textNoSuggestions"
-                   android:hint="Display Phone Number"/>
-           </RelativeLayout>
-       </RelativeLayout>
 
-   </ScrollView>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_descriptionic"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Display Description"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/private_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rellayout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/grey_border_bottom"
+                android:text="Private Information"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <!-- Display user email -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/private_information"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/rellayout4"
+                android:layout_marginTop="15dp">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Display Email"/>
+            </RelativeLayout>
+
+            <!-- Display user phone# -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rellayout4"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/rellayout5"
+                android:layout_marginTop="15dp">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneNumber"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Display Phone Number"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 
 </merge>

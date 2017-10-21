@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-        <include layout="@layout/layout_viewpager"/>
+    <include layout="@layout/layout_viewpager"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/rellayout2">
 
-            <include layout="@layout/snippet_top_accountsettingstoolbar"/>
+            <include layout="@layout/snippet_topaccountsettingstoolbar"/>
 
         </RelativeLayout>
 

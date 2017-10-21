@@ -109,4 +109,3 @@ public class AccountSettingsActivity extends AppCompatActivity{
     }
 }
 
-

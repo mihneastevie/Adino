@@ -38,12 +38,12 @@ public class EditProfileFragment extends Fragment {
             }
         });
 
-        
+
         return view;
     }
 
 
-//temporary method just to check if images load correctly
+    //temporary method just to check if images load correctly
     private void setProfileImage(){
         Log.d(TAG, "setProfileImage: setting profile image.");
         String imgURL = "https://pbs.twimg.com/profile_images/661679787799265280/BokwoEaG.png";

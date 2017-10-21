@@ -10,111 +10,111 @@
         android:layout_height="match_parent"
         android:background="@color/white">
 
-    <!-- TOP Toolbar -->
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/rellayout1"
-        android:background="@drawable/grey_border_bottom">
-
-        <include layout="@layout/snippet_top_profilebar"/>
-    </RelativeLayout>
-
-    <!-- PICTURE SECTION -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/rellayout2"
-        android:paddingTop="20dp"
-        android:layout_below="@id/rellayout1"
-        android:background="@drawable/white_grey_border_bottom">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/linLayout">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:id="@+id/profile_photo"
-                    app:civ_border_color="@color/black"
-                    app:civ_border_width="2dp"
-                    tools:layout_editor_absoluteY="40dp"
-                    tools:layout_editor_absoluteX="142dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    />
-
-            </RelativeLayout>
-        </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_below="@id/linLayout"
-    android:id="@+id/linLayout2"
-    >
-    <TextView
-        android:id="@+id/textView1"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location"
-        android:layout_below="@+id/textView1"
-        android:textSize="15sp"
-        android:gravity="center" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Description"
-        android:layout_below="@+id/textView2"
-        android:textSize="15sp"
-        android:gravity="center" />
-
-    </LinearLayout>
+        <!-- TOP Toolbar -->
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rellayout3"
-            android:layout_below="@id/linLayout2"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/white_grey_border_bottom">
-            
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/gridView"
-                android:numColumns="3"
-                android:verticalSpacing="1dp"
-                android:horizontalSpacing="1dp"
-                android:stretchMode="columnWidth"
-                android:gravity="center">
+            android:layout_height="50dp"
+            android:id="@+id/rellayout1"
+            android:background="@drawable/grey_border_bottom">
 
-            </GridView>
-
+            <include layout="@layout/snippet_top_profilebar"/>
         </RelativeLayout>
 
+        <!-- PICTURE SECTION -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rellayout2"
+            android:paddingTop="20dp"
+            android:layout_below="@id/rellayout1"
+            android:background="@drawable/white_grey_border_bottom">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:id="@+id/profile_photo"
+                        app:civ_border_color="@color/black"
+                        app:civ_border_width="2dp"
+                        tools:layout_editor_absoluteY="40dp"
+                        tools:layout_editor_absoluteX="142dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/linLayout"
+                android:id="@+id/linLayout2"
+                >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:layout_below="@+id/textView1"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:layout_below="@+id/textView2"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rellayout3"
+                android:layout_below="@id/linLayout2"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/white_grey_border_bottom">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridView"
+                    android:numColumns="3"
+                    android:verticalSpacing="1dp"
+                    android:horizontalSpacing="1dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center">
+
+                </GridView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout>
 </merge>
