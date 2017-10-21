@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Adino</string>
+    <string name="facebook_app_id">158605184735878</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="your_items_fragment">Your Items</string>
+    <string name="sign_out_fragment">Sign out</string>
+
+</resources>
